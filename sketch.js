@@ -30,7 +30,7 @@ var recordtime;         // Fastest time to target
 var obstacles;  //an array list to keep track of all the obstacles!
 
 function setup() {
-  createCanvas(640, 360);
+  createCanvas(windowWidth, windowHeight);
   // The number of cycles we will allow a generation to live
   lifetime = height;
 
