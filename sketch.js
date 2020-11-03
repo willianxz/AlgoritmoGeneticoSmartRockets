@@ -23,7 +23,7 @@ var lifeCounter;   // Timer for cycle of generation
 
 var target;        // Target location
 
-var info;
+
 
 var recordtime;         // Fastest time to target
 
@@ -42,9 +42,6 @@ function setup() {
   // Create a population with a mutation rate, and population max
   var mutationRate = 0.01;
   population = new Population(mutationRate, 50);
-
-  info = createP("");
-  info.position(10,380);
 
   recordtime = lifeCounter;
 
@@ -83,8 +80,7 @@ function draw() {
     obstacles[i].display();
 
   }
-  info.html("Generation #: " + population.getGenerations() + "<br>" + "Cycles left: " + (lifetime-lifeCounter));
-
+  
   textSize(20);
   fill(255);
   text("Generation #: " + population.getGenerations(), 100, 100);
