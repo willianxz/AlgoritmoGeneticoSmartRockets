@@ -85,6 +85,11 @@ function draw() {
   }
   info.html("Generation #: " + population.getGenerations() + "<br>" + "Cycles left: " + (lifetime-lifeCounter));
 
+  textSize(20);
+  fill(255);
+  text("Generation #: " + population.getGenerations(), 100, 100);
+  text("Cycles left: " + (lifetime-lifeCounter), 100, 120);
+
 }
 
 // Move the target if the mouse is pressed
